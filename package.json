@@ -6,54 +6,54 @@
   "author": "Firebase <firebase-support@google.com> (https://firebase.google.com/)",
   "license": "Apache-2.0",
   "homepage": "https://firebase.google.com/",
-  "browser": "dist/index.esm.js",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "browser": "dist/index.mjs",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "typings": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./index.esm.js",
-      "require": "./index.cjs.js",
+      "import": "./index.mjs",
+      "require": "./index.js",
       "types": "./index.d.ts"
     },
     "./auth": {
-      "import": "./auth/index.esm.js",
-      "require": "./auth/index.cjs.js",
+      "import": "./auth/index.mjs",
+      "require": "./auth/index.js",
       "types": "./auth/index.d.ts"
     },
     "./database": {
-      "import": "./database/index.esm.js",
-      "require": "./database/index.cjs.js",
+      "import": "./database/index.mjs",
+      "require": "./database/index.js",
       "types": "./database/index.d.ts"
     },
     "./firestore": {
-      "import": "./firestore/index.esm.js",
-      "require": "./firestore/index.cjs.js",
+      "import": "./firestore/index.mjs",
+      "require": "./firestore/index.js",
       "types": "./firestore/index.d.ts"
     },
     "./firestore/lite": {
-      "import": "./firestore/lite/index.esm.js",
-      "require": "./firestore/lite/index.cjs.js",
+      "import": "./firestore/lite/index.mjs",
+      "require": "./firestore/lite/index.js",
       "types": "./firestore/lite/index.d.ts"
     },
     "./functions": {
-      "import": "./functions/index.esm.js",
-      "require": "./functions/index.cjs.js",
+      "import": "./functions/index.mjs",
+      "require": "./functions/index.js",
       "types": "./functions/index.d.ts"
     },
     "./performance": {
-      "import": "./performance/index.esm.js",
-      "require": "./performance/index.cjs.js",
+      "import": "./performance/index.mjs",
+      "require": "./performance/index.js",
       "types": "./performance/index.d.ts"
     },
     "./remote-config": {
-      "import": "./remote-config/index.esm.js",
-      "require": "./remote-config/index.cjs.js",
+      "import": "./remote-config/index.mjs",
+      "require": "./remote-config/index.js",
       "types": "./remote-config/index.d.ts"
     },
     "./storage": {
-      "import": "./storage/index.esm.js",
-      "require": "./storage/index.cjs.js",
+      "import": "./storage/index.mjs",
+      "require": "./storage/index.js",
       "types": "./storage/index.d.ts"
     }
   },
@@ -114,6 +114,7 @@
     "md5": "^2.3.0",
     "npm-run-all": "^4.1.5",
     "rollup": "^2.33.2",
+    "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-generate-package-json": "^3.2.0",
     "rxjs": "^7.0.0",
     "tslib": "^2.6.0",

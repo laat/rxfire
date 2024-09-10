@@ -1,8 +1,8 @@
 {
   "name": "rxfire/auth",
-  "browser": "../dist/auth/index.esm.js",
-  "main": "../dist/auth/index.cjs.js",
-  "module": "../dist/auth/index.esm.js",
+  "browser": "../dist/auth/index.mjs",
+  "main": "../dist/auth/index.js",
+  "module": "../dist/auth/index.mjs",
   "typings": "../dist/auth/index.d.ts",
   "sideEffects": false
 }

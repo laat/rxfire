@@ -1,8 +1,8 @@
 {
   "name": "rxfire/storage",
-  "browser": "../dist/storage/index.esm.js",
-  "main": "../dist/storage/index.cjs.js",
-  "module": "../dist/storage/index.esm.js",
+  "browser": "../dist/storage/index.mjs",
+  "main": "../dist/storage/index.js",
+  "module": "../dist/storage/index.mjs",
   "typings": "../dist/storage/index.d.ts",
   "sideEffects": false
 }

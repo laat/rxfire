@@ -19,6 +19,7 @@ import { resolve, dirname, relative, join } from 'path';
 import resolveModule from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
+import copy from 'rollup-plugin-copy';
 import { peerDependencies, dependencies } from './package.json';
 import { sync as globSync } from 'glob';
 import { readFileSync } from 'fs';
@@ -122,6 +123,14 @@ export default Object.keys(packages)
           // TS sourceMaps conflict with Rollup sourceMaps
           typescript({ sourceMap: false }),
           generatePackageJson({ outputFolder, baseContents }),
+          copy({
+            targets: [{
+              src: 'dist/**/*.d.ts',
+              dest: 'dist/',
+              rename: (name) => `${name}.mts`
+            }],
+            flatten: false
+          })
         ],
         external
       },

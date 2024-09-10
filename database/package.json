@@ -1,8 +1,8 @@
 {
   "name": "rxfire/database",
-  "browser": "../dist/database/index.esm.js",
-  "main": "../dist/database/index.cjs.js",
-  "module": "../dist/database/index.esm.js",
+  "browser": "../dist/database/index.mjs",
+  "main": "../dist/database/index.js",
+  "module": "../dist/database/index.mjs",
   "typings": "../dist/database/index.d.ts",
   "sideEffects": false
 }
